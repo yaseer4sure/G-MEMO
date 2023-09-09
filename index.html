@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaseer Assignment Page</title>
+    <style>
+    
+        [data-testid="slackUserName"] {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+    
+        [data-testid="slackDisplayImage"] {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; 
+            margin-bottom: 20px;
+        }
+
+    
+        [data-testid="currentDayOfTheWeek"] {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+    
+        [data-testid="currentUTCTime"] {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+
+        [data-testid="myTrack"] {
+            font-size: 24px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+    
+        [data-testid="githubURL"] {
+            font-size: 18px;
+            color: #007bff;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        
+        [data-testid="githubURL"]:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slack Name -->
+    <div data-testid="slackUserName">Yaseer S. Mikail</div>
+
+    <!-- Slack Display Picture -->
+    <img src="https://ca.slack-edge.com/T05FFAA91JP-U05RDUTRJ68-be9f9c405f25-192" alt="Yaseer S. Mikail" data-testid="slackDisplayImage">
+
+    <!-- Current Day of the Week -->
+    <div data-testid="currentDayOfTheWeek"></div>
+
+    <!-- Current UTC Time -->
+    <div data-testid="currentUTCTime"></div>
+
+    <!-- Track -->
+    <div data-testid="myTrack">Frontend</div>
+
+    <!-- GitHub URL -->
+    <a href="https://github.com/yaseer4sure/G-MEMO.git" data-testid="githubURL" data-testid="githubURL">GitHub Repository</a>
+
+    <script>
+        // JavaScript code for real-time data
+        document.addEventListener("DOMContentLoaded", function () {
+        
+            const slackName = document.querySelector('[data-testid="slackUserName"]');
+            const currentDay = document.querySelector('[data-testid="currentDayOfTheWeek"]');
+            const currentUTC = document.querySelector('[data-testid="currentUTCTime"]');
+
+        
+            slackName.textContent = "Yaseer S. Mikail";
+
+        
+            const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const today = new Date().getDay();
+            currentDay.textContent = daysOfWeek[today];
+
+        
+            currentUTC.textContent = Date.now();
+
+            
+            const githubURL = document.querySelector('[data-testid="githubURL"]');
+            githubURL.href = "https://github.com/yaseer4sure/G-MEMO.git" data-testid="githubURL";
+        });
+    </script>
+</body>
+</html>
