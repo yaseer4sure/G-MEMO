@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<hea>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-UP</title>
+    <style>
+        body {
+            background-color: white;
+            color: #627081;
+        }
+
+        h1 {
+            color: navy;
+            font-size: 30px;
+            font-weight: 20px;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .class-p {
+            font-weight: bold;
+            margin-top:50px;
+            margin: 0 auto;
+            color: #083e9e !important;
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+        .class_A {
+            text-align: center;
+        }
+
+        .class_B {
+            border-style: dotted;
+            border-width: 2px;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px 550px;
+        }
+
+        .leftlabel {
+            text-align: left;
+        }
+
+       .classl-label {
+        font-size: 5px;
+
+        }
+
+        .inputcontrol {
+            width: 100%;
+            font-size: 1.2em;
+            padding: 15px;
+            box-sizing: border-box;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #144499;
+        }
+
+        .btn {
+            padding: 15px 40px !important;
+            display: inline-block;
+            color: #fff;
+            border-radius: 5px;
+            transition: all 200ms ease-in-out;
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+            background: #144499;
+            border: 1px solid #144499;
+            font-size: 20px;
+
+        }
+
+        .btn:hover {
+            background-color: #05457b;
+        }
+
+        .thhr {
+            border-top: 1px dashed #05457b;
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #08c;
+            margin: 0 auto;
+        }
+
+        div a {
+            text-decoration: none;
+            color: #08c;
+            margin: 0 auto;
+            line-height: 10px;
+        }
+
+        ._center {
+            text-align: center;
+        }
+        ._margin-20 {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="class_A">
+         <h1 class="class-p">Create a Secured Account</h1>
+         <p>Welcome to the future of Savings & Investments</p>
+        </div>
+         <div class="">
+            <form class="class_B">
+                <label class="leftlabel">First & Last Name (Should Match Your Bank)</label><br>
+                <input type="text" name="fname" id="fname" required class="inputcontrol"><br><br>
+                <label class="leftlabel">Valid Email</label><br>
+                <input type="email" name="email" id="email" required class="inputcontrol"><br><br>
+                <label class="">Phone Number</label><br>
+                <input type="tel" name="phone" id="phone" maxlength="11" required class="inputcontrol"><br><br>
+                <label class="">Create a Password</label><br>
+                <input type="password" name="password" id="Password" maxlength="20" required class="inputcontrol"><br><br>
+                <label class="">Referrer Phone or Promo Code (Optional)</label><br>
+                <input type="text" placeholder="Referrer Phone Or Code" name="promocode" id="promocode" required class="inputcontrol"><br><br>
+                <label class="">How Did You Hear About Us? (Optional)</label><br>
+                <select class="inputcontrol">
+                    <option value="" selected>Click To Select</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="referral" >Friend/Family/Coworker Referral</option>
+                    <option value="gsearch" >Google search</option>
+                    <option value="gplaystore" >Google playstore</option>
+                    <option value="blog" >Online Blog</option>
+                    <option value="newspaper" >Local Newspaper</option>
+                    <option value="events" >At an event</option>
+                    <option value="Other" >Other</option>
+                </select>
+                <div>
+                    <hr class="thhr">
+                    <button type="submit" class="btn">Create a Free Account</button>
+                </div>
+            </form>
+            <div class="_center _margin-20">
+               <a href="">Already have an Account? Login</a>
+            </div>
+            <div class=" _center ">
+                By continuing, I agree to PiggyVest's <a href="">Terms of Use</a> &
+                <a href=""> Privacy.</a>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
